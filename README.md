@@ -20,15 +20,15 @@ This is a test submission for salvo agency.
 Run php artisan serve and navigate to your browser
 
 - superadmin
-    - email: admin@savo.com
+    - email: admin@salvo.com
     - password: password
 
 - developer
-    - email: developer@savo.com
+    - email: developer@salvo.com
     - password: password
 
 - support
-    - email: support@savo.com
+    - email: support@salvo.com
     - password: password
 
 
