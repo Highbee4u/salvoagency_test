@@ -22,7 +22,7 @@ class AuthController extends Controller
                         ->withSuccess('You have Successfully loggedin');
         }
 
-        return redirect("home")->with('error','Oppes! You have entered invalid credentials');
+        return redirect("/")->with('error','Oppes! You have entered invalid credentials');
    }
 
    public function logout()
