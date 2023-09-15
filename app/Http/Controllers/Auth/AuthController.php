@@ -22,7 +22,7 @@ class AuthController extends Controller
                         ->withSuccess('You have Successfully loggedin');
         }
 
-        return redirect("home")->withSuccess('Oppes! You have entered invalid credentials');
+        return redirect("/")->withSuccess('Oppes! You have entered invalid credentials');
    }
 
    public function logout()
@@ -30,6 +30,6 @@ class AuthController extends Controller
         Session::flush();
         Auth::logout();
   
-        return redirect()->route('home');
+        return redirect()->route('/');
     }
 }
