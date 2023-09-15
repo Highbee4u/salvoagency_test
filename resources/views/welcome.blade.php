@@ -3,6 +3,11 @@
 @section('content')
 <main class="login-form">
   <div class="cotainer">
+   @if ($message = Session::get('error'))
+        <div class="alert alert-danger">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
       <div class="row justify-content-center">
           <div class="col-md-8">
               <div class="card">
